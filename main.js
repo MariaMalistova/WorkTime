@@ -1,7 +1,7 @@
 $(function() {
     console.log( "ready!" );
-    let duration = 2;
-    let start = 20;
+    let duration = 9;
+    let start = 8;
     makeAll(start);
 });
 
