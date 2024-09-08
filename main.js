@@ -19,7 +19,7 @@ function loadTime(start) {
     //let nowInt = now.setHours(10, 21, 45);
     let startDate = new Date().setHours(start, 0, 0);
     let endDate = new Date().setHours(start + duration, 0, 0);
-    if (hoursNow > (start + duration) && hoursNow < start) {
+    if (hoursNow > (start + duration) || hoursNow < start) {
         return 'Конец дня!';
     } else {
         var _second = 1000;
