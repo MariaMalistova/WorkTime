@@ -29,7 +29,8 @@ function loadTime(start) {
         let lasts = endDate - nowInt;
         let hours = Math.floor(lasts / _hour);
         let minutes = Math.floor((lasts % _hour) / _minute);
-        return `${hours} ч ${minutes} мин`;
+        let persents = ((nowInt - startDate) / (endDate - startDate) * 100).toFixed(2);
+        return `${hours} ч ${minutes} мин, ${persents}%`;
     }
     /*var distance = end - now;
     if (distance < 0) {
